@@ -1,0 +1,28 @@
+[package]
+name = "JestMessageUtil"
+authors = { workspace = true }
+description = { workspace = true }
+repository = { workspace = true }
+homepage = { workspace = true }
+documentation = { workspace = true }
+keywords = { workspace = true }
+version = { workspace = true }
+license = { workspace = true }
+content_root = "src"
+files = ["*", "!**/__tests__/**"]
+
+[config]
+registry_index = "true"
+
+[dependencies]
+LuauPolyfill = { workspace = true }
+ChalkLua = { workspace = true }
+RegExp = { workspace = true }
+JestTypes = { path = "../jest-types"}
+PrettyFormat = { path = "../pretty-format"}
+RobloxShared = { path = "../roblox-shared"}
+
+[dev_dependencies]
+JestGlobals = { path = "../jest-globals" }
+JestSnapshotSerializerRaw = { path = "../jest-snapshot-serializer-raw" }
+Promise = { workspace = true }
