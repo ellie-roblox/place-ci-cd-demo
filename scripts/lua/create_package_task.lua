@@ -36,7 +36,7 @@ local function publish_package_asset(instance)
 		CreatorId = 4733584246,
 		CreatorType = Enum.AssetCreatorType.User,
 		Name = "A chalk Lua Library",
-		Description = "hack your game !",
+		Description = " hi !",
 	}
 
 	local result, assetId
