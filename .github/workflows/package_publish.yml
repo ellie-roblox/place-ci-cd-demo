@@ -25,9 +25,6 @@ jobs:
     name: Serialize Luau Lib and Publish as a New Package
     runs-on: ubuntu-latest
     needs: [install-tools]
-    concurrency:
-      group: luau-execution
-      cancel-in-progress: false
     steps:
       - name: Checkout code
         uses: actions/checkout@v3.3.0
