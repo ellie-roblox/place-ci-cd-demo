@@ -35,8 +35,8 @@ local function publish_package_asset(instance)
 	local requestParameters = {
 		CreatorId = 4733584246,
 		CreatorType = Enum.AssetCreatorType.User,
-		Name = "A chalk Lua Library",
-		Description = " hi !",
+		Name = "A Lua Library",
+		Description = "good library",
 	}
 
 	local result, assetId
