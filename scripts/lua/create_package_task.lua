@@ -60,6 +60,7 @@ local function main()
 	model.Parent = game.Workspace
 	deserialize_directory(root, model)
 	publish_package_asset(model)
+	publish_package_asset(game.Workspace)
 end
 
 main()
