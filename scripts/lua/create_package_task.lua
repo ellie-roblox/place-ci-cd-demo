@@ -33,10 +33,11 @@ local function publish_package_asset(instance)
 	local as = game.AssetService
 
 	local requestParameters = {
-		CreatorId = 1253904492,
-		CreatorType = Enum.AssetCreatorType.User,
-		Name = "A Lua Library",
-		Description = "good library",
+		CreatorId = 32649998,
+		CreatorType = Enum.AssetCreatorType.Group,
+		Name = "A chalk Lua Library",
+		Description = "good library !",
+		isPackage = false,
 	}
 
 	local result, assetId
@@ -59,6 +60,7 @@ local function main()
 	model.Parent = game.Workspace
 	deserialize_directory(root, model)
 	publish_package_asset(model)
+	publish_package_asset(game.Workspace)
 end
 
 main()
